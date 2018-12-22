@@ -1,0 +1,157 @@
+.nav {
+  @include md {
+  display: flex;   
+}
+}
+.nav li {
+    list-style-type: none;
+}
+
+.headline--primary {
+  font-size: 2.5em;
+  line-height:35px;
+}
+
+.card {
+  font-size: 1.2em;
+}
+
+.headline--secondary {
+  margin: 10px 0 0 30px;
+  font-weight: lighter;
+  color: rgb(140, 137, 130);
+}
+
+.headline--primary {
+  margin: 20px 45px;
+  font-size: 1.4em;
+  color: rgb(0, 223, 170);
+}
+
+.link {
+  color: rgb(0, 155, 254);
+  font-weight: bold;
+}
+
+.blockquote {
+  border-left: solid 7px;
+  border-color: rgb(0, 223, 170);
+  border-radius: 5px;
+  padding-left: 22px;
+  font-size: 1.3em;
+  line-height: 1.0;
+  margin-bottom: 70px;
+  font-style: italic;
+}
+
+.headline--secondary {
+  font-size: 1.2em;
+}
+
+.btn--default {
+  border: none;
+  background-color: rgb(0, 194, 255);
+}
+
+.img--frame {
+  width: 85%;
+  margin: 50px 30px 0 20px;
+  border: solid 1px;
+  border-color: silver;
+  padding: 10px;
+}
+
+.theme__colors {
+  margin-bottom: 0;
+}
+
+.btn--success {
+  background-color: rgb(24, 205, 3);
+}
+
+.btn--error {
+  background-color: rgb(250, 30, 30);
+}
+
+.btn--warning {
+  background-color: rgb(255, 100, 0);
+}
+
+.btn--info {
+  background-color: rgb(119, 0, 238);
+}
+
+#grid {
+  margin: 30px 30px;
+}
+
+.grid__row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid__col--4.theme__colors:first-child {
+  margin-top: 50px;
+}
+
+.grid__col--3.theme__colors:first-child {
+  margin-top: 50px;
+}
+
+.grid__col--7.theme__colors.centered:last-child {
+  margin-top: 50px;
+}
+
+.grid__col--12.theme__colors  {
+background-color: rgb(0, 232, 128);
+border-radius: 5px;
+line-height: 2.5;
+margin: 0px 20px 50px 20px;
+}
+
+
+.grid__col--6.theme__colors {
+background-color: rgb(45, 113, 204);
+margin: 0 20px 5px 20px;
+border-radius: 5px;
+line-height: 2.5;
+}
+
+.grid__col--4.theme__colors {
+margin: 0 20px 5px 20px;
+background-color: rgb(0, 209, 255);
+line-height: 2.5;
+border-radius: 5px;
+}
+
+.grid__col--3.theme__colors {
+  background-color: rgb(197, 158, 231);
+  margin: 0 20px 5px 20px;
+  line-height: 2.5;
+  border-radius: 5px;
+}
+
+.grid__col--5.theme__colors {
+  background-color: rgb(115, 213, 137);
+  margin: 50px 20px 5px 20px;
+  line-height: 2.5;
+  border-radius: 5px;
+}
+
+.grid__col--7.theme__colors {
+  background-color: rgb(255, 106, 85);
+  margin: 0 20px;
+  line-height: 2.5;
+  border-radius: 5px;
+}
+
+.grid__col--8.theme__colors {
+  background-color: rgb(247, 111, 12);
+  margin: 50px 20px 5px 20px;
+  line-height: 2.5;
+  border-radius: 5px;
+}
