@@ -1,2 +1,20 @@
 //Media Query Variable
-$mq: 768px;
+$brkpoint-sm      : 1px;
+$brkpoint-md      : 768px;
+$brkpoint-lg      : 1100px;
+
+
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.center {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}

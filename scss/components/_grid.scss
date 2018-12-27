@@ -1,0 +1,40 @@
+html {
+  @include mq(medium) {
+    box-sizing: border-box;
+    margin:0 auto;
+  }
+}
+
+
+.container {
+    @include mq(medium) {
+
+}
+}
+
+.grid__row {
+  @include mq(medium) {
+  display: flex;
+  }
+}
+
+.img--logo {
+    @include mq(medium) {
+  display: flex;
+margin:auto;
+padding: 0;
+max-width: 10%;
+}
+}
+
+.nav {
+    @include mq(medium) {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  text-align: center;
+  align-items: baseline;
+  margin:0;
+  padding: 0;
+}
+}
