@@ -1,40 +1,47 @@
-html {
-  @include mq(medium) {
-    box-sizing: border-box;
-    margin:0 auto;
-  }
-}
+//GRID SECTION
 
 
-.container {
-    @include mq(medium) {
-
-}
-}
-
-.grid__row {
-  @include mq(medium) {
-  display: flex;
-  }
+.grid__col--12.theme__colors {
+  background-color: $grid-col-12-color-light;
+  line-height: $line-height-button;
+  border-radius: $button-radius;
 }
 
-.img--logo {
-    @include mq(medium) {
-  display: flex;
-margin:auto;
-padding: 0;
-max-width: 10%;
-}
+.grid__col--6.theme__colors {
+  margin-bottom: 5px;
+  background-color: $grid-col-6-color-light;
+  line-height: $line-height-button;
+  border-radius: $button-radius;
 }
 
-.nav {
-    @include mq(medium) {
-  display: flex;
-  justify-content: center;
-  max-width: 100%;
-  text-align: center;
-  align-items: baseline;
-  margin:0;
-  padding: 0;
+.grid__col--4.theme__colors{
+  margin-bottom: 5px;
+  background-color: $grid-col-4-color-light;
+  line-height: $line-height-button;
+  border-radius: $button-radius;
 }
+
+.grid__col--3.theme__colors {
+  margin-bottom: 5px;
+  background-color: $grid-col-3-color-light;
+  line-height: $line-height-button;
+  border-radius: $button-radius;
+}
+
+.grid__col--5.theme__colors {
+  margin-bottom: 5px;
+  background-color: $grid-col-5-color-light;
+  line-height: $line-height-button;
+  border-radius: $button-radius;
+}
+.grid__col--7.theme__colors {
+  background-color: $grid-col-7-color-light;
+  line-height: $line-height-button;
+  border-radius: $button-radius;
+}
+.grid__col--8.theme__colors {
+  margin-bottom: 5px;
+  background-color: $grid-col-8-color-light;
+  line-height: $line-height-button;
+  border-radius: $button-radius;
 }

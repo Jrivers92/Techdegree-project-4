@@ -1,7 +1,43 @@
 //Media Query Variable
-$brkpoint-sm      : 1px;
-$brkpoint-md      : 768px;
-$brkpoint-lg      : 1100px;
+$brkpoint-sm          : 1px;
+$brkpoint-md          : 768px;
+$brkpoint-lg          : 1100px;
+
+
+// COLOR SECTION
+$secondary-hd             : rgb(27, 26, 26);
+$secondary-hd-light       : lighten($secondary-hd, 40%);
+$headline-primary         : rgb(0, 255, 171);
+$link-text                : rgb(6, 248, 255);
+$block-quote-border       : rgb(0, 255, 171);
+$block-quote-font         : rgb(97, 97, 97);
+$input-border             : rgb(0, 255, 171);
+$login-button             : rgb(0, 198, 233);
+$img-border               : rgb(27, 26, 26);
+$img-border-light         : lighten($img-border, 70%);
+$button-font-color        : rgb(255, 255, 255);
+$grid-col-12-color        : rgb(0, 161, 112);
+$grid-col-12-color-light  : lighten($grid-col-12-color, 45%);
+$grid-col-6-color         : rgb(0, 83, 193);
+$grid-col-6-color-light   : lighten($grid-col-6-color, 30%);
+$grid-col-4-color         : skyblue;
+$grid-col-4-color-light   : lighten($grid-col-4-color, 5%);
+$grid-col-3-color         : pink;
+$grid-col-3-color-light   : lighten($grid-col-3-color, 1%);
+$grid-col-5-color         : forestgreen;
+$grid-col-5-color-light   : lighten($grid-col-5-color, 40%);
+$grid-col-7-color         : red;
+$grid-col-7-color-light   : lighten($grid-col-7-color, 25%);
+$grid-col-8-color         : darkorange;
+$grid-col-8-color-light   : lighten($grid-col-8-color, 20%);
+
+
+//LINE HEIGHT
+$line-height-button   : 2.5;
+
+// BUTTON ATTRIBUTES
+
+$button-radius        : 5px;
 
 
 

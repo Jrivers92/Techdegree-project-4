@@ -1,11 +1,11 @@
-@mixin mq($break) {
+@mixin mq ($break) {
     @if $break == "small" {
         @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
             @content;
         }
     }
     @else if $break == "medium" {
-        @media (min-width: $brkpoint-md) {
+        @media (min-width: $brkpoint-md + 1) {
             @content;
         }
     }
@@ -15,6 +15,6 @@
         }
     }
     @else {
-        @error "No value could be retrieved for #{$break}";
+        @error "No value could be retrieved for '#{$break}'.";
     }
 }

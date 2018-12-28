@@ -1,9 +1,23 @@
+//NAV BAR IMAGE
+
 .img--logo {
-margin: 50px 120px;
+display: block;
+margin: 0 auto;
+width: 150px;
 }
 
+// 2 IMAGE SECTION
 .img--avatar {
-  
-  margin: 20px 100px;
+  display: block;
+  align-self: center;
+  margin: 0 auto;
+}
 
+
+.img--frame {
+  width: 100%;
+  display: block;
+  border: 1px solid $img-border-light;
+  padding: 10px;
+  margin-bottom: 20px;
 }
