@@ -1,10 +1,17 @@
 //MEDIA QUERY
-.grid__row,
-.nav {
-  @include mq(medium) {
+@include mq(medium) {
+  .grid__col--3 {
     display: flex;
+  }
+nav {
+  display: flex;
+  flex-direction: row;
+}
+.nav {
+  flex-direction: row;
 }
 }
+
 
 // Navigation Bar
 

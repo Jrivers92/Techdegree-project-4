@@ -501,10 +501,17 @@ a {
 @media (min-width: 769px) {
   .grid__col--3 {
     display: flex;
-    max-width: 1100px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav {
+    flex-direction: row;
   }
 }
-
 .grid__row,
 .nav {
   display: flex;
