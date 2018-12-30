@@ -1,3 +1,8 @@
+//================================================
+// MEDIA QUERY
+//================================================
+
+
 @mixin mq ($break) {
     @if $break == "small" {
         @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md) {
@@ -19,6 +24,9 @@
     }
 }
 
+//================================================
+// BUTTON SECTION
+//================================================
 
 @mixin btn-specs {
   line-height: $line-height-button;
@@ -27,8 +35,27 @@
   text-transform: uppercase;
 }
 
+//================================================
+// GRID COL SECTION
+//================================================
+
 @mixin grid-brder-height-margin {
   margin-bottom: 5px;
   line-height: $line-height-button;
   border-radius: $button-radius;
+}
+
+//================================================
+// FLEXBOX CONTAINER MIXIN
+//================================================
+
+@mixin flexy(
+$disp: flex,
+$dir: null,
+$wrap: null,
+$just: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
 }

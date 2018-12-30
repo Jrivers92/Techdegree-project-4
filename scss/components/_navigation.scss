@@ -1,16 +1,19 @@
-// Navigation Bar
+//================================================
+// NAVIGATION BAR
+//================================================
 
 .grid__row,
 .nav {
-  display: flex;
-  flex-direction: column;
+  @include flexy($dir: column);
 }
 
 
 .grid__row {
   padding-top: 2em;
 }
-// NESTED ElEMENT
+//================================================
+// NESTED ELEMENT
+//================================================
 .nav {
   margin-top: 3.0em;
   font-size: 1.125em;
@@ -32,7 +35,9 @@
 }
 
 
+//================================================
 // H4 HEADING
+//================================================
 
 .headline--secondary {
   color: $secondary-hd-light;
@@ -40,7 +45,9 @@
   font-size: 1.25em;
 }
 
+//================================================
 // HEADLINE PRIMARY
+//================================================
 
 .headline--primary {
   color: $headline-primary;
@@ -49,15 +56,18 @@
   font-size: 2.0em;
 }
 
-// PARAGRAPH link
+//================================================
+// PARAGRAPH LINK
+//================================================
 
 .link {
   color: $link-text;
   font-weight: bolder;
 }
 
+//================================================
 // BLOCKQUOTE
-
+//================================================
 .blockquote {
   width: 80%;
   color: $block-quote-font;
@@ -70,12 +80,13 @@
   margin-bottom: 60px;
 }
 
-//MEDIA QUERY
+//================================================
+// MEDIA QUERY MIXIN
+//================================================
 @include mq(medium) {
 .grid__row,
 .nav  {
-  display: flex;
-  flex-direction: row;
+@include flexy($dir: row);
   max-width: 1400px;
 }
 .nav {
@@ -120,24 +131,19 @@ p {
   width: 95%;
   margin-right: 20px;
 }
-//FLEX BOX SETUP FOR THE 6 Buttons
+//================================================
+// FLEXBOX SETUP FOR THE BUTTONS
+//================================================
 
 .grid__col--12 {
+  @include flexy($dir: row, $just: space-between);
   max-width: 1400px;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
 }
 
 
 .btn--default.theme__colors {
-  box-sizing: content-box;
-  vertical-align: top;
-  height: 20px;
-  padding: 20px 30px;
+
 }
 
 .btn--success.theme__colors {
@@ -157,7 +163,9 @@ border-radius: $button-radius;
 border-radius: $button-radius;
 }
 
-// LAST SECTION OF PROJECT THE GRID BARS
+//================================================
+// GRID COL SECTION
+//================================================
 
 .grid__col--12.theme__colors {
 padding-left: 46%;
@@ -201,11 +209,5 @@ padding-left: 46%;
   padding: auto;
   margin-top: auto;
   margin-bottom: auto;
-}
-
-
-.theme__colors {
-  flex-direction: row;
-  max-width: 1400px;
 }
 }
