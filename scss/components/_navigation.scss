@@ -1,26 +1,3 @@
-//MEDIA QUERY
-@include mq(medium) {
-body {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  max-width: 1100px;
-}
-
-.grid__row {
-display: flex;
-}
-
-.nav a {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-}
-
-}
-
-//WHY IS EVERYTHING BEING OVERWRITTEN IN FLEX COLUMN NOT FLEX ROW!!!!!!!!!!!!!!!!
-
 // Navigation Bar
 
 .grid__row,
@@ -33,28 +10,27 @@ display: flex;
 .grid__row {
   padding-top: 2em;
 }
-
+// NESTED ElEMENT
 .nav {
   margin-top: 3.0em;
   font-size: 1.125em;
   line-height: 50px;
-}
+  a {
+   display: block;
+   color: black;
+   text-align: center;
+ }
+ li:first-child {
+   background: rgb(7, 249, 234);
+   border-radius: 5px;
 
-.nav a {
-  display: block;
-  color: black;
-  text-align: center;
+ }
 }
 
 .nav li:first-child a {
   color: white;
 }
 
-li:first-child {
-  background: rgb(7, 249, 234);
-  border-radius: 5px;
-  line-height: 50px;
-}
 
 // H4 HEADING
 
@@ -92,4 +68,144 @@ li:first-child {
   line-height: 22px;
   font-style: italic;
   margin-bottom: 60px;
+}
+
+//MEDIA QUERY
+@include mq(medium) {
+.grid__row,
+.nav  {
+  display: flex;
+  flex-direction: row;
+  max-width: 1400px;
+}
+.nav {
+  margin-top: 15px;
+  li {
+   padding-right: .65em;
+   padding-left: .65em;
+ }
+}
+
+//IMG FOR NAV BAR I DONT KNOW IF IT WAS A GLITCH OR NOT BUT KEPT -
+//POPPING UP IN THE CENTER AND SOMETIMES IN TO THE RIGHT.
+
+.img--logo {
+  margin-left: 0;
+}
+
+.grid__col--9 {
+  margin-left: auto;
+}
+
+p {
+  .grid__col--12 & {
+font-size: 1.5em;
+margin:auto;
+padding: auto;
+}
+}
+
+p {
+  font-size: 1.30em;
+}
+.blockquote {
+  font-size: 1.65em;
+}
+
+.img--avatar {
+  margin-top: 30px;
+}
+
+.form__input {
+  width: 95%;
+  margin-right: 20px;
+}
+//FLEX BOX SETUP FOR THE 6 Buttons
+
+.grid__col--12 {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+
+.btn--default.theme__colors {
+  box-sizing: content-box;
+  vertical-align: top;
+  height: 20px;
+  padding: 20px 30px;
+}
+
+.btn--success.theme__colors {
+border-radius: $button-radius;
+}
+
+.btn--error.theme__colors {
+border-radius: $button-radius;
+}
+
+.btn--warning.theme__colors {
+border-radius: $button-radius;
+}
+
+
+.btn--info.theme__colors {
+border-radius: $button-radius;
+}
+
+// LAST SECTION OF PROJECT THE GRID BARS
+
+.grid__col--12.theme__colors {
+padding-left: 46%;
+}
+
+.grid__col--3 {
+  margin-right: .65em;
+  width: 100%;
+}
+.grid__col--4 {
+  margin-right:.65em;
+  margin-left: auto;
+  margin-top: 20px;
+  width: 40%;
+}
+
+.grid__col--5 {
+  width: 40%;
+  margin-right: .65em;
+}
+
+.grid__col--6 {
+  margin-right: .65em;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.grid__col--7 {
+  width: 60%;
+  margin:auto;
+}
+
+.grid__col--7.theme__colors.centered {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.grid__col--8 {
+  width: 60%;
+  margin-right: .65em;
+  padding: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+.theme__colors {
+  flex-direction: row;
+  max-width: 1400px;
+}
 }

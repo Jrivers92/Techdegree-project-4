@@ -1,11 +1,9 @@
 // LOGIN BUTTON
 
 .btn--default {
+  @include btn-specs;
   margin-top: 20px;
   background-color: $login-button;
-  line-height: $line-height-button;
-  border-radius: $button-radius;
-  color: $button-font-color;
 }
 
 
@@ -16,39 +14,23 @@
   flex-direction: column;
 }
 
-.btn--default {
-  text-transform: uppercase;
-}
-
 .btn--success {
+  @include btn-specs;
   margin: 10px 0;
-  line-height: $line-height-button;
-  color: $button-font-color;
-  border-radius: $button-radius;
   background-color: forestgreen;
-  text-transform: uppercase;
 }
 
 .btn--error {
-  line-height: $line-height-button;
-  color: $button-font-color;
-  border-radius: $button-radius;
+@include btn-specs;
   background-color: rgb(255, 31, 0);
-  text-transform: uppercase;
 }
 
 .btn--warning {
+  @include btn-specs;
   margin: 10px 0;
-  line-height: $line-height-button;
-  color: $button-font-color;
-  border-radius: $button-radius;
   background-color: orange;
-  text-transform: uppercase;
 }
 .btn--info {
-  line-height: $line-height-button;
-  color: $button-font-color;
-  border-radius: $button-radius;
+@include btn-specs;
   background-color: purple;
-  text-transform: uppercase;
 }

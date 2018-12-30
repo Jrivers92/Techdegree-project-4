@@ -2,46 +2,34 @@
 
 
 .grid__col--12.theme__colors {
+  @include grid-brder-height-margin;
   background-color: $grid-col-12-color-light;
-  line-height: $line-height-button;
-  border-radius: $button-radius;
 }
 
 .grid__col--6.theme__colors {
-  margin-bottom: 5px;
+  @include grid-brder-height-margin;
   background-color: $grid-col-6-color-light;
-  line-height: $line-height-button;
-  border-radius: $button-radius;
 }
 
 .grid__col--4.theme__colors{
-  margin-bottom: 5px;
+  @include grid-brder-height-margin;
   background-color: $grid-col-4-color-light;
-  line-height: $line-height-button;
-  border-radius: $button-radius;
 }
 
 .grid__col--3.theme__colors {
-  margin-bottom: 5px;
+  @include grid-brder-height-margin;
   background-color: $grid-col-3-color-light;
-  line-height: $line-height-button;
-  border-radius: $button-radius;
 }
 
 .grid__col--5.theme__colors {
-  margin-bottom: 5px;
+  @include grid-brder-height-margin;
   background-color: $grid-col-5-color-light;
-  line-height: $line-height-button;
-  border-radius: $button-radius;
 }
 .grid__col--7.theme__colors {
+  @include grid-brder-height-margin;
   background-color: $grid-col-7-color-light;
-  line-height: $line-height-button;
-  border-radius: $button-radius;
 }
 .grid__col--8.theme__colors {
-  margin-bottom: 5px;
+@include grid-brder-height-margin;
   background-color: $grid-col-8-color-light;
-  line-height: $line-height-button;
-  border-radius: $button-radius;
 }

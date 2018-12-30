@@ -18,3 +18,17 @@
         @error "No value could be retrieved for '#{$break}'.";
     }
 }
+
+
+@mixin btn-specs {
+  line-height: $line-height-button;
+  color: $button-font-color;
+  border-radius: $button-radius;
+  text-transform: uppercase;
+}
+
+@mixin grid-brder-height-margin {
+  margin-bottom: 5px;
+  line-height: $line-height-button;
+  border-radius: $button-radius;
+}
