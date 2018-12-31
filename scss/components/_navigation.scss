@@ -160,12 +160,16 @@ border-radius: $button-radius;
 padding-left: 46%;
 }
 
+.grid__row > .theme__colors  {
+  text-align: center;
+}
+
 .grid__col--3 {
-  margin-right: .65em;
+  margin-right: $margin-right;
   width: 100%;
 }
 .grid__col--4 {
-  margin-right:.65em;
+  margin-right: $margin-right;
   margin-left: auto;
   margin-top: 20px;
   width: 40%;
@@ -173,13 +177,13 @@ padding-left: 46%;
 
 .grid__col--5 {
   width: 40%;
-  margin-right: .65em;
+  margin-right: $margin-right;
 }
 
 .grid__col--6 {
-  margin-right: .65em;
   margin-top: 10px;
   width: 100%;
+  margin-right: $margin-right;
 }
 
 .grid__col--7 {
@@ -190,11 +194,13 @@ padding-left: 46%;
 .grid__col--7.theme__colors.centered {
   margin-right: auto;
   margin-left: auto;
+  width: 70%;
 }
 
 .grid__col--8 {
+
   width: 60%;
-  margin-right: .65em;
+  margin-right: $margin-right;
   padding: auto;
   margin-top: auto;
   margin-bottom: auto;

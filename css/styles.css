@@ -382,7 +382,7 @@ a {
 .btn--default {
   line-height: 2.5;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   text-transform: uppercase;
   margin-top: 20px;
   background-color: #00c6e9;
@@ -396,7 +396,7 @@ a {
 .btn--success {
   line-height: 2.5;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   text-transform: uppercase;
   margin: 10px 0;
   background-color: forestgreen;
@@ -405,7 +405,7 @@ a {
 .btn--error {
   line-height: 2.5;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   text-transform: uppercase;
   background-color: #ff1f00;
 }
@@ -413,7 +413,7 @@ a {
 .btn--warning {
   line-height: 2.5;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   text-transform: uppercase;
   margin: 10px 0;
   background-color: orange;
@@ -422,7 +422,7 @@ a {
 .btn--info {
   line-height: 2.5;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
   text-transform: uppercase;
   background-color: purple;
 }
@@ -451,49 +451,49 @@ a {
 .grid__col--12.theme__colors {
   margin-bottom: 5px;
   line-height: 2.5;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #88ffdb;
 }
 
 .grid__col--6.theme__colors {
   margin-bottom: 5px;
   line-height: 2.5;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #5ba2ff;
 }
 
 .grid__col--4.theme__colors {
   margin-bottom: 5px;
   line-height: 2.5;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #9dd7ef;
 }
 
 .grid__col--3.theme__colors {
   margin-bottom: 5px;
   line-height: 2.5;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #ffc5cf;
 }
 
 .grid__col--5.theme__colors {
   margin-bottom: 5px;
   line-height: 2.5;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #94e594;
 }
 
 .grid__col--7.theme__colors {
   margin-bottom: 5px;
   line-height: 2.5;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #ff8080;
 }
 
 .grid__col--8.theme__colors {
   margin-bottom: 5px;
   line-height: 2.5;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #ffba66;
 }
 
@@ -548,7 +548,7 @@ a {
   width: 80%;
   color: #616161;
   border-left: 8px solid #00ffab;
-  border-radius: 5px;
+  border-radius: 10px;
   padding-left: 20px;
   font-size: 1.3em;
   line-height: 22px;
@@ -615,11 +615,15 @@ a {
     margin: auto;
     padding: auto;
     width: 18%;
-    border-radius: 5px;
+    border-radius: 10px;
   }
 
   .grid__col--12.theme__colors {
     padding-left: 46%;
+  }
+
+  .grid__row > .theme__colors {
+    text-align: center;
   }
 
   .grid__col--3 {
@@ -640,9 +644,9 @@ a {
   }
 
   .grid__col--6 {
-    margin-right: 0.65em;
     margin-top: 10px;
     width: 100%;
+    margin-right: 0.65em;
   }
 
   .grid__col--7 {
@@ -653,6 +657,7 @@ a {
   .grid__col--7.theme__colors.centered {
     margin-right: auto;
     margin-left: auto;
+    width: 70%;
   }
 
   .grid__col--8 {
