@@ -7,13 +7,14 @@
   @include flexy($dir: column);
 }
 
-
 .grid__row {
   padding-top: 2em;
 }
+
 //================================================
 // NESTED ELEMENT
 //================================================
+
 .nav {
   margin-top: 3.0em;
   font-size: 1.125em;
@@ -141,27 +142,15 @@ p {
   width: 100%;
 }
 
+//================================================
+// THE 5 FIVE BUTTONS LAYOUT
+//================================================
 
-.btn--default.theme__colors {
-
-}
-
-.btn--success.theme__colors {
+.grid__col--12 > button {
+@include five-button;
 border-radius: $button-radius;
 }
 
-.btn--error.theme__colors {
-border-radius: $button-radius;
-}
-
-.btn--warning.theme__colors {
-border-radius: $button-radius;
-}
-
-
-.btn--info.theme__colors {
-border-radius: $button-radius;
-}
 
 //================================================
 // GRID COL SECTION

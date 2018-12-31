@@ -611,19 +611,10 @@ a {
     width: 100%;
   }
 
-  .btn--success.theme__colors {
-    border-radius: 5px;
-  }
-
-  .btn--error.theme__colors {
-    border-radius: 5px;
-  }
-
-  .btn--warning.theme__colors {
-    border-radius: 5px;
-  }
-
-  .btn--info.theme__colors {
+  .grid__col--12 > button {
+    margin: auto;
+    padding: auto;
+    width: 18%;
     border-radius: 5px;
   }
 
