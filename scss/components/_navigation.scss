@@ -17,12 +17,13 @@
 
 .nav {
   margin-top: 3.0em;
-  font-size: 1.125em;
+  font-size: $font;
   line-height: 50px;
   a {
    display: block;
    color: black;
    text-align: center;
+   text-decoration: none;
  }
  li:first-child {
    background: rgb(7, 249, 234);
@@ -43,7 +44,7 @@
 .headline--secondary {
   color: $secondary-hd-light;
   font-weight: normal;
-  font-size: 1.25em;
+  font-size: $font;
 }
 
 //================================================
@@ -52,6 +53,7 @@
 
 .headline--primary {
   color: $headline-primary;
+  margin-left: 30px;
   font-weight: bold;
   line-height: 27px;
   font-size: 2.0em;
@@ -64,6 +66,7 @@
 .link {
   color: $link-text;
   font-weight: bolder;
+  text-decoration: none;
 }
 
 //================================================
@@ -75,7 +78,7 @@
   border-left: 8px solid $block-quote-border;
   border-radius: $button-radius;
   padding-left: 20px;
-  font-size: 1.3em;
+  font-size: $font;
   line-height: 22px;
   font-style: italic;
   margin-bottom: 60px;
@@ -118,7 +121,7 @@ padding: auto;
 }
 
 p {
-  font-size: 1.30em;
+  font-size: $font;
 }
 .blockquote {
   font-size: 1.65em;
@@ -146,10 +149,11 @@ p {
 // THE 5 FIVE BUTTONS LAYOUT
 //================================================
 
-.grid__col--12 > button {
+.grid__col--12 > .theme__colors {
 @include five-button;
 border-radius: $button-radius;
 }
+
 
 
 //================================================
@@ -198,7 +202,6 @@ padding-left: 46%;
 }
 
 .grid__col--8 {
-
   width: 60%;
   margin-right: $margin-right;
   padding: auto;

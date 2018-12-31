@@ -341,7 +341,6 @@ template {
 }
 
 body {
-  margin: 0;
   line-height: 1.5;
   width: 90%;
   margin: auto;
@@ -352,11 +351,6 @@ li {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  font-weight: 400;
 }
 
 .img--logo {
@@ -509,13 +503,14 @@ a {
 
 .nav {
   margin-top: 3em;
-  font-size: 1.125em;
+  font-size: 1.25em;
   line-height: 50px;
 }
 .nav a {
   display: block;
   color: black;
   text-align: center;
+  text-decoration: none;
 }
 .nav li:first-child {
   background: #07f9ea;
@@ -534,6 +529,7 @@ a {
 
 .headline--primary {
   color: #00ffab;
+  margin-left: 30px;
   font-weight: bold;
   line-height: 27px;
   font-size: 2em;
@@ -542,6 +538,7 @@ a {
 .link {
   color: #06f8ff;
   font-weight: bolder;
+  text-decoration: none;
 }
 
 .blockquote {
@@ -550,13 +547,13 @@ a {
   border-left: 8px solid #00ffab;
   border-radius: 10px;
   padding-left: 20px;
-  font-size: 1.3em;
+  font-size: 1.25em;
   line-height: 22px;
   font-style: italic;
   margin-bottom: 60px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .grid__row,
 .nav {
     display: flex;
@@ -587,7 +584,7 @@ a {
   }
 
   p {
-    font-size: 1.3em;
+    font-size: 1.25em;
   }
 
   .blockquote {
@@ -611,7 +608,7 @@ a {
     width: 100%;
   }
 
-  .grid__col--12 > button {
+  .grid__col--12 > .theme__colors {
     margin: auto;
     padding: auto;
     width: 18%;
